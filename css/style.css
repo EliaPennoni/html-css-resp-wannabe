@@ -135,27 +135,19 @@ img {
  ************************************************/
 
  /* tablet */
-@media screen and (max-width: 992px) { 
+@media screen and (max-width: 768px) { 
     .container {
-        max-width: 768px; 
+        max-width: 100%; 
     }
-    .lessons .col {
-        width: 50%; 
-    }
-    .steps .col {
-        width: calc(33.33% - 2rem);
-    }
-    .why-us .col-left,
-    .why-us .col-right {
-        width: 100%;
+    
 }
-}
+
     
         
         
     
  /* smartphone */
-    @media screen and (max-width: 600px) { 
+    @media screen and (max-width: 468px) { 
         .container {
             max-width: 100%;
         }
@@ -173,5 +165,9 @@ img {
         }
         .why-us{
             background: #222222;
+            padding-top: 3rem;
+        }
+        .why-us, .lessons {
+            margin-bottom: 0;
         }
     }
